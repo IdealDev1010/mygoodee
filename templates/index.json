@@ -20,11 +20,19 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "text_NFJRxX": {
+          "type": "text",
+          "settings": {
+            "text": "Discover exclusive styles and autumn hues.",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "heading",
-        "button"
+        "button",
+        "text_NFJRxX"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/div.rimage-outer-wrapper.png",
