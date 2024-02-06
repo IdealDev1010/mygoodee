@@ -3,11 +3,25 @@
     "image_banner": {
       "type": "image-banner",
       "blocks": {
+        "text_kLp4h6": {
+          "type": "text",
+          "settings": {
+            "text": "NEW IN",
+            "text_style": "subtitle"
+          }
+        },
         "heading": {
           "type": "heading",
           "settings": {
             "heading": "Ezcaray",
             "heading_size": "h0"
+          }
+        },
+        "text_NFJRxX": {
+          "type": "text",
+          "settings": {
+            "text": "Discover exclusive styles and autumn hues.",
+            "text_style": "body"
           }
         },
         "button": {
@@ -20,19 +34,13 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
-        },
-        "text_NFJRxX": {
-          "type": "text",
-          "settings": {
-            "text": "Discover exclusive styles and autumn hues.",
-            "text_style": "body"
-          }
         }
       },
       "block_order": [
+        "text_kLp4h6",
         "heading",
-        "button",
-        "text_NFJRxX"
+        "text_NFJRxX",
+        "button"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/div.rimage-outer-wrapper.png",
