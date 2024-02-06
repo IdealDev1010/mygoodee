@@ -11,10 +11,18 @@
             "text": "Free Shipping over $175USD*",
             "link": ""
           }
+        },
+        "announcement_cXeR77": {
+          "type": "announcement",
+          "settings": {
+            "text": "Sign-up for our newsletter and receive 15% off your first purchase. *Conditions Apply.",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_cXeR77"
       ],
       "settings": {
         "color_scheme": "scheme-4",
