@@ -39,6 +39,13 @@
             "subtext": "Trade Program",
             "sub_link": "#"
           }
+        },
+        "announcement_right_UYaWhd": {
+          "type": "announcement-right",
+          "settings": {
+            "subtext": "Welcome to our store",
+            "sub_link": ""
+          }
         }
       },
       "block_order": [
@@ -46,7 +53,8 @@
         "announcement_cXeR77",
         "announcement_right_DWPTPw",
         "announcement_right_Prn66N",
-        "announcement_right_CBD8rw"
+        "announcement_right_CBD8rw",
+        "announcement_right_UYaWhd"
       ],
       "settings": {
         "color_scheme": "scheme-4",
