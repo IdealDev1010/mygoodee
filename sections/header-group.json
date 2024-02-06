@@ -32,13 +32,21 @@
             "subtext": "Gift Registry",
             "sub_link": "#"
           }
+        },
+        "announcement_right_CBD8rw": {
+          "type": "announcement-right",
+          "settings": {
+            "subtext": "Trade Program",
+            "sub_link": "#"
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
         "announcement_cXeR77",
         "announcement_right_DWPTPw",
-        "announcement_right_Prn66N"
+        "announcement_right_Prn66N",
+        "announcement_right_CBD8rw"
       ],
       "settings": {
         "color_scheme": "scheme-4",
