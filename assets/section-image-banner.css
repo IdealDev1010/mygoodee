@@ -10,6 +10,15 @@
   text-align: center;
 }
 
+.banner__box p{
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.2000000476837158px;
+  text-align: center;
+
+}
+
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
 .banner__box.gradient {
   transform: perspective(0);
@@ -426,6 +435,12 @@
 
 .banner__heading {
   margin-bottom: 0;
+  font-family: Arial;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 95px;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .banner__box .banner__heading + * {
@@ -438,6 +453,18 @@
   gap: 1rem;
   max-width: 45rem;
   word-break: break-word;
+}
+
+.banner__buttons a {
+  padding: 16.5px, 27.54px, 16.5px, 27.74px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0.8799999952316284px;
+  text-align: center;
+  background-color: #FFF;
+  color: #4A49FE;
 }
 
 @media screen and (max-width: 749px) {
