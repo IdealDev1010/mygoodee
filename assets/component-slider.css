@@ -330,6 +330,7 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 @media screen and (min-width: 990px) {
@@ -368,6 +369,7 @@ slider-component.slider-component-full-width {
 
 .slider-button .icon {
   height: 0.6rem;
+  display: none;
 }
 
 .slider-button[disabled] .icon {
@@ -390,3 +392,25 @@ slider-component.slider-component-full-width {
 .slider-button--prev:not([disabled]):hover .icon {
   transform: rotate(90deg) scale(1.1);
 }
+
+.announcement-bar, .announcement-bar__announcement {
+  justify-content: flex-start;
+
+}
+
+.announcement-bar, .announcement-bar__announcement span{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  
+}
+
+/* .announcement--inactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: visibility 0s .3s;
+  visibility: hidden;
+} */
