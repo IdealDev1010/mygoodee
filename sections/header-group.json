@@ -25,12 +25,20 @@
             "subtext": "About Us",
             "sub_link": "#"
           }
+        },
+        "announcement_right_Prn66N": {
+          "type": "announcement-right",
+          "settings": {
+            "subtext": "Gift Registry",
+            "sub_link": "#"
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
         "announcement_cXeR77",
-        "announcement_right_DWPTPw"
+        "announcement_right_DWPTPw",
+        "announcement_right_Prn66N"
       ],
       "settings": {
         "color_scheme": "scheme-4",
