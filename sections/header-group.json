@@ -43,8 +43,8 @@
         "announcement_right_UYaWhd": {
           "type": "announcement-right",
           "settings": {
-            "subtext": "Welcome to our store",
-            "sub_link": ""
+            "subtext": "Stories",
+            "sub_link": "#"
           }
         }
       },
