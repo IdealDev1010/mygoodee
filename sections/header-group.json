@@ -18,11 +18,19 @@
             "text": "Sign-up for our newsletter and receive 15% off your first purchase. *Conditions Apply.",
             "link": ""
           }
+        },
+        "announcement_right_DWPTPw": {
+          "type": "announcement-right",
+          "settings": {
+            "subtext": "About Us",
+            "sub_link": "#"
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
-        "announcement_cXeR77"
+        "announcement_cXeR77",
+        "announcement_right_DWPTPw"
       ],
       "settings": {
         "color_scheme": "scheme-4",
