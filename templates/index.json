@@ -112,10 +112,41 @@
         "button_url": "#",
         "button_text": "READ MORE"
       }
+    },
+    "rich_text_LrkfJT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qxNfwt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Autumn Palette",
+            "heading_size": "h1"
+          }
+        },
+        "text_MJdNze": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bring in the warm Fall tones with new arrivals from our most loved brands.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qxNfwt",
+        "text_MJdNze"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 100,
+        "padding_bottom": 32
+      }
     }
   },
   "order": [
     "image_banner",
-    "new_featured_collection_6YayYe"
+    "new_featured_collection_6YayYe",
+    "rich_text_LrkfJT"
   ]
 }
