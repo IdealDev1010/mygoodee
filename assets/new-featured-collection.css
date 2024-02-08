@@ -5,8 +5,8 @@
 
 .new-featured-collection-content {
     display: grid;
-    grid-template-columns: 180px 1fr;
-    grid-gap: 40px;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
     align-items: center;
    
 }

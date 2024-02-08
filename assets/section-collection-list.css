@@ -29,6 +29,10 @@
   width: 100%;
 }
 
+.collection-list__item.grid__item {
+  max-height: 400px;
+}
+
 @media screen and (max-width: 749px) {
   .slider.collection-list--1-items {
     padding-bottom: 0;
@@ -53,6 +57,7 @@
 @media screen and (max-width: 989px) {
   .collection-list.slider .collection-list__item {
     max-width: 100%;
+    max-height: 400px;
   }
 }
 
