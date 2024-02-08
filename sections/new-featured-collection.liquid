@@ -1,0 +1,144 @@
+{{ 'new-featured-collection.css' | asset_url | stylesheet_tag }}
+
+<div class="new-featured-collection-wrapper">
+    <h2 class="text-center new-featured-collection__title">{{ section.settings.title }}</h2>
+    <div class="new-featured-collection-content">
+      <div class="new-featured-collection__inner">
+          <div class="new-featured-collection__image-content">
+              <div class="new-featured-collection__image">  
+                  {% liquid
+                    assign featured_media = section.settings.image
+                  -%}
+                  <img
+                    srcset="{%- if featured_media.width >= 550 -%}{{ featured_media | img_url: '550x' }} 550w,{%- endif -%}
+                      {%- if featured_media.width >= 720 -%}{{ featured_media | img_url: '720x' }} 720w,{%- endif -%}
+                      {%- if featured_media.width >= 990 -%}{{ featured_media | img_url: '990x' }} 990w,{%- endif -%}
+                      {%- if featured_media.width >= 1100 -%}{{ featured_media | img_url: '1100x' }} 1100w,{%- endif -%}
+                      {%- if featured_media.width >= 1500 -%}{{ featured_media | img_url: '1500x' }} 1500w,{%- endif -%}
+                      {%- if featured_media.width >= 2200 -%}{{ featured_media | img_url: '2200x' }} 2200w,{%- endif -%}
+                      {%- if featured_media.width >= 3000 -%}{{ featured_media | img_url: '3000x' }} 3000w,{%- endif -%}
+                      {{ featured_media | img_url: 'master' }} {{ featured_media.width }}w"
+                    src="{{ featured_media | img_url: '1500x' }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)"
+                    alt="{{ featured_media.alt | escape }}"
+                    loading="lazy"
+                    width="{{ featured_media.width }}"
+                    height="{{ featured_media.height }}"
+                    class="image-wrapper"
+                  >
+              </div>
+              <div class="new-featured-collection__image-btn">
+                  <a class="new-featured-collection__image-button" href="{{ section.settings.button_url }}">{{ section.settings.button_text }}</a>
+              </div>
+          </div>
+      </div>
+      <div class="new-featured-collection__item-wrapper">
+        <div class="new-featured-collection__grid">
+          {% for block in section.blocks %}
+            <div class="new-featured-collection__item">
+                <div class="item-image-wrapper">
+                
+                  {% liquid
+                    assign featured_media = block.settings.sub_image
+                    -%}
+                  <img
+                    srcset="{%- if featured_media.width >= 550 -%}{{ featured_media | img_url: '550x' }} 550w,{%- endif -%}
+                      {%- if featured_media.width >= 720 -%}{{ featured_media | img_url: '720x' }} 720w,{%- endif -%}
+                      {%- if featured_media.width >= 990 -%}{{ featured_media | img_url: '990x' }} 990w,{%- endif -%}
+                      {%- if featured_media.width >= 1100 -%}{{ featured_media | img_url: '1100x' }} 1100w,{%- endif -%}
+                      {%- if featured_media.width >= 1500 -%}{{ featured_media | img_url: '1500x' }} 1500w,{%- endif -%}
+                      {%- if featured_media.width >= 2200 -%}{{ featured_media | img_url: '2200x' }} 2200w,{%- endif -%}
+                      {%- if featured_media.width >= 3000 -%}{{ featured_media | img_url: '3000x' }} 3000w,{%- endif -%}
+                      {{ featured_media | img_url: 'master' }} {{ featured_media.width }}w"
+                    src="{{ featured_media | img_url: '1500x' }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {% if section.blocks.size == 1 %}calc({{ settings.page_width }}px - 100px){% else %}{{ settings.page_width | minus: 100 | times: 0.67 | round }}px{% endif %}, (min-width: 750px){% if section.blocks.size == 1 %} calc(100vw - 100px){% else %} 500px{% endif %}, calc(100vw - 30px)"
+                    alt="{{ featured_media.alt | escape }}"
+                    loading="lazy"
+                    width="{{ featured_media.width }}"
+                    height="{{ featured_media.height }}"
+                    class="item-image"
+                  >
+                </div>
+                <div class="item-text">
+                  <h6 class="item-text__heading">{{ block.settings.sub_title }}</h6>
+                  <div class="item-text__description">{{ block.settings.description }}</div>
+                  <a class="item-text__button" href="{{ block.settings.btn_url }}">{{ block.settings.btn_text}}</a>
+                </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "new featured collection",
+  "class": "new-featured-collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "text",
+      "label": "Title"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+    },
+    {
+        "type": "url",
+        "id": "button_url",
+        "label": "Btn url"
+    },
+    {
+        "type": "text",
+        "id": "button_text",
+        "label": "Btn text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon-with-text",
+      "name": "icon with text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "sub_image",
+          "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "sub_title",
+            "label": "Sub title",
+            "default": "text" 
+        },
+        {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description",
+            "default": "<p>text</p>" 
+        },
+        {
+            "type": "url",
+            "id": "btn_url",
+            "label": "Btn url"
+        },
+        {
+            "type": "text",
+            "id": "btn_text",
+            "label": "Btn text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "new featured collection"
+    }
+  ]
+}
+{% endschema %}
