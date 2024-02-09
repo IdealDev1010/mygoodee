@@ -1,7 +1,7 @@
 .card-wrapper {
   color: inherit;
   height: 100%;
-  position: relative;
+  /*position: relative;*/
   text-decoration: none;
 }
 
@@ -12,8 +12,10 @@
 
 .card:not(.ratio) {
   display: flex;
-  flex-direction: column;
   height: 100%;
+  width: 100%;
+
+
 }
 
 .card.card--horizontal {
@@ -139,6 +141,9 @@
   padding: 1rem;
   width: 100%;
   flex-grow: 1;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
 }
 
 .card__content--auto-margins {
@@ -147,7 +152,7 @@
 
 .card__information {
   grid-row-start: 2;
-  padding: 1.3rem 1rem;
+  /*padding: 1.3rem 1rem;*/
 }
 
 .card:not(.ratio) > .card__content {
@@ -162,7 +167,7 @@
 
 @media screen and (min-width: 750px) {
   .card__information {
-    padding-bottom: 1.7rem;
+    /*padding-bottom: 1.7rem;*/
     padding-top: 1.7rem;
   }
 }
@@ -199,11 +204,31 @@
 
 .card__heading {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 .card__heading:last-child {
   margin-bottom: 0;
+}
+.card__heading a {
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 1.2000000476837158px;
+  text-align: left;
+  color: #ffffff;
+
+}
+
+.card__button {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.8999999761581421px;
+  text-align: left;
+  color: #ffffff;
+
 }
 
 .card--horizontal .card__heading,
@@ -356,6 +381,7 @@
   white-space: nowrap;
   transition: transform var(--duration-short) ease;
   overflow: hidden;
+  display: none;
 }
 
 .card-information > * + * {

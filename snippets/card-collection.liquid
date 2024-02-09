@@ -39,7 +39,7 @@
       {% if card_collection.featured_image %} card--media{% else %} card--text{% endif %}
       {% if card_style == 'card' %} color-{{ card_color_scheme }} gradient{% endif %}
       {% if extend_height %} card--extend-height{% endif %}
-      {% if card_collection.featured_image == nil and card_style == 'card' %} ratio{% endif %}
+      {% if card_collection.featured_image == nill and card_style == 'card' %} ratio{% endif %}
     "
     style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
   >
@@ -108,7 +108,9 @@
                 <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
               </p>
             {%- endif -%}
+            <span class="card__button">SHOP</span>
           </div>
+
         </div>
       {%- endif -%}
     </div>
@@ -140,7 +142,9 @@
               <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
             </p>
           {%- endif -%}
+          <span class="card__button">SHOP</span>
         </div>
+
       </div>
     {%- endif -%}
     {%- if card_collection == blank -%}
