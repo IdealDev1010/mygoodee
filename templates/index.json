@@ -64,27 +64,7 @@
           "settings": {
             "sub_image": "shopify:\/\/shop_images\/cause_natural_material_png.png",
             "sub_title": "Natural Materials",
-            "description": "<p>This product has been crafted with<br\/>materials that are derived from plants,<br\/>animals, or other naturally occurring<br\/>materials.<\/p>",
-            "btn_url": "#",
-            "btn_text": "SHOP ALL"
-          }
-        },
-        "icon_with_text_pxBcKJ": {
-          "type": "icon-with-text",
-          "settings": {
-            "sub_image": "shopify:\/\/shop_images\/cause_heritage_craft_preservation_png.png",
-            "sub_title": "Heritage Craft Preservation",
-            "description": "<p>This product supports the preservation of<br\/>heritage crafts and enables artisans to<br\/>create sustainable livelihoods through their<br\/>traditional skills<\/p>",
-            "btn_url": "#",
-            "btn_text": "SHOP ALL"
-          }
-        },
-        "icon_with_text_4gUWaH": {
-          "type": "icon-with-text",
-          "settings": {
-            "sub_image": "shopify:\/\/shop_images\/cause_marginalized_communities_png.png",
-            "sub_title": "Marginalized Communities",
-            "description": "<p>A portion of proceeds from the sale of this<br\/>product go towards disenfranchised groups<br\/>that are specific to the brand’s social and<br\/>cultural community.<\/p>",
+            "description": "<p>This product has been crafted with materials that are derived from plants, animals, or other naturally occurring materials.<\/p>",
             "btn_url": "#",
             "btn_text": "SHOP ALL"
           }
@@ -94,17 +74,37 @@
           "settings": {
             "sub_image": "shopify:\/\/shop_images\/cause_gender_advocacy_png.png",
             "sub_title": "Gender Advocacy",
-            "description": "<p>Supporting women and non-binary people<br\/>by encouraging diverse leadership and<br\/>creating a safe, equitable work place free<br\/>from discrimination and harassment.<\/p>",
+            "description": "<p>Supporting women and non-binary people by encouraging diverse leadership and creating a safe, equitable work place free<br\/>from discrimination and harassment.<\/p>",
             "btn_url": "#",
+            "btn_text": "SHOP ALL"
+          }
+        },
+        "icon_with_text_3LEetT": {
+          "type": "icon-with-text",
+          "settings": {
+            "sub_image": "shopify:\/\/shop_images\/cause_heritage_craft_preservation_png.png",
+            "sub_title": "Heritage Craft Preservation",
+            "description": "<p>This product supports the  preservation of heritage crafts and enables artisans to create sustainable livelihoods through their traditional skills<\/p>",
+            "btn_url": "#",
+            "btn_text": "SHOP ALL"
+          }
+        },
+        "icon_with_text_BGehgR": {
+          "type": "icon-with-text",
+          "settings": {
+            "sub_image": "shopify:\/\/shop_images\/cause_marginalized_communities_png.png",
+            "sub_title": "Marginalized Communities",
+            "description": "<p>A portion of proceeds from the sale of this product go towards disenfranchised groups that are specific to the brand’s social and<br\/>cultural community.<\/p>",
+            "btn_url": "",
             "btn_text": "SHOP ALL"
           }
         }
       },
       "block_order": [
         "icon_with_text_tR7RLL",
-        "icon_with_text_pxBcKJ",
-        "icon_with_text_4gUWaH",
-        "icon_with_text_4bNRtA"
+        "icon_with_text_4bNRtA",
+        "icon_with_text_3LEetT",
+        "icon_with_text_BGehgR"
       ],
       "settings": {
         "title": "What we care about",
@@ -142,11 +142,71 @@
         "padding_top": 100,
         "padding_bottom": 32
       }
+    },
+    "collection_list_4FYmJt": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_YyCJXy": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "baba-tree",
+            "collection_width": 32
+          }
+        },
+        "featured_collection_acpRPx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bergs-potter",
+            "collection_width": 32
+          }
+        },
+        "featured_collection_kjHQXY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ezacray",
+            "collection_width": 32
+          }
+        },
+        "featured_collection_RyqFaV": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "malaika",
+            "collection_width": 48
+          }
+        },
+        "featured_collection_KjDpAC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tensira",
+            "collection_width": 49
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_YyCJXy",
+        "featured_collection_acpRPx",
+        "featured_collection_kjHQXY",
+        "featured_collection_RyqFaV",
+        "featured_collection_KjDpAC"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "new_featured_collection_6YayYe",
-    "rich_text_LrkfJT"
+    "rich_text_LrkfJT",
+    "collection_list_4FYmJt"
   ]
 }

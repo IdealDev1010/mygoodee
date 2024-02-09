@@ -14,6 +14,19 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+  {% for block in section.blocks %}
+    .collection-list .block-{{ block.id }}-width {
+      width: {{ block.settings.collection_width }}%;
+    max-width:{{ block.settings.collection_width }}%;
+    }
+
+    @media screen and (min-width: 750px) {
+      .collection-list .block-{{ block.id }}-width {
+        width: 100%;
+    max-width:{{ block.settings.collection_width }}%;
+      }
+    }
+  {%endfor%}
 {%- endstyle -%}
 
 {%- liquid
@@ -63,7 +76,7 @@
         {%- for block in section.blocks -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="block-{{ block.id }}-width collection-list__item grid__item{% if show_mobile_slider %} slider__slide{% endif %}{% if block.settings.collection.featured_image == nill %} collection-list__item--no-media{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
               data-cascade
@@ -268,6 +281,16 @@
           "type": "collection",
           "id": "collection",
           "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
+        },
+        {
+          "type": "range",
+          "id": "collection_width",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Collection width",
+          "default": 20
         }
       ]
     }
